@@ -7,7 +7,44 @@ body{
     font-family: sans-serif;
 } 
 /* Utility */
+:root{
+    --pd: 10px;
+}
 .container{
    width: 1200px;
    margin: 0 auto;
+}
+header{
+    background-color: rgb(255,105,0);
+    color: white;
+    padding: 20px;
+    box-shadow: 0 0 5px gray;
+}
+.flex{
+  display: flex;
+}
+/* HEADER */
+.navigation{
+    display: flex;
+    justify-content: space-between;
+}
+.categories > .list{
+    display: flex;
+    list-style-type: none;
+    padding: 5px 0;
+}
+.item{
+    text-decoration: none;
+    padding: var(--pd);
+    color: white;
+    font-weight: bolder;
+}
+#logo{
+    height: 30px;
+}
+.shop{
+    display: flex;
+}
+.shop > i{
+    padding: var(--pd);
 }
