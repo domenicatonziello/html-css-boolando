@@ -8,10 +8,10 @@ body{
 } 
 /* Utility */
 :root{
-    --pd: 10px;
+    --s: 10px;
 }
 .container{
-   width: 1200px;
+   width: 1000px;
    margin: 0 auto;
 }
 header{
@@ -19,6 +19,16 @@ header{
     color: white;
     padding: 20px;
     box-shadow: 0 0 5px gray;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+main{
+    padding-top: 80px;
+}
+figcaption{
+    font-size: 14px;
 }
 .flex{
   display: flex;
@@ -35,7 +45,7 @@ header{
 }
 .item{
     text-decoration: none;
-    padding: var(--pd);
+    padding: var(--s);
     color: white;
     font-weight: bolder;
 }
@@ -46,5 +56,60 @@ header{
     display: flex;
 }
 .shop > i{
-    padding: var(--pd);
+    padding: var(--s);
+}
+/*  MAIN  */
+.row{
+    display: flex; 
+    gap: var(--s); 
+    margin: 20px auto; 
+}
+.column{
+    position: relative;
+    /* border: 1px dashed black;*/
+    /* min-height: 200px; */
+    flex-basis: calc(100% / 3);
+}
+.img{
+    width: 100%;
+    display: block;
+}
+.title{
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.card span{
+    font-size: 15px;
+}
+.sales{
+    color: red;
+    font-weight: 600;
+}
+.price{
+    text-decoration: line-through;
+}
+.heart{
+    background-color: white;
+    padding: 10px;
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+.discount{
+    background-color: red;
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+}
+.label{
+    padding: 5px var(--s);
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+}
+.sostenibilità{
+    background-color: rgb(0,128,0);
+    position: absolute;
+    bottom: 100px;
+    left: 60px;
 }
