@@ -97,19 +97,19 @@ figcaption{
 }
 .discount{
     background-color: red;
+    margin-right: 5px;
+    padding: 5px var(--s);
+}
+.label{
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    display: flex;
     position: absolute;
     bottom: 100px;
     left: 0;
 }
-.label{
-    padding: 5px var(--s);
-    color: white;
-    font-weight: 600;
-    font-size: 15px;
-}
 .sostenibilità{
     background-color: rgb(0,128,0);
-    position: absolute;
-    bottom: 100px;
-    left: 60px;
+    padding: 5px var(--s);
 }
